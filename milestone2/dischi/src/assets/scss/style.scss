@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e2d3b;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    padding: 5rem;
+}
+
+.row{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   row-gap: 1.5rem;
+}
+
+.card{
+    width: calc(100% * 1/5 - 2rem + 2rem/5);
+    background-color: #2e3a46;
+    padding: 1rem;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+h2{
+    color: white;
+}
+
+.author,
+.year{
+    color: gray;
+}
+
