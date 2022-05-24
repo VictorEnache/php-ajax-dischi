@@ -81,7 +81,7 @@ al caricamento della pagina ci saranno tutti i dischi.
 
    $dischi = json_decode($dischi_json);
 
-   var_dump($dischi[0]->poster)
+   /* var_dump($dischi[0]->poster) */
  ?>
 
 
