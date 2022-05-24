@@ -92,16 +92,28 @@ al caricamento della pagina ci saranno tutti i dischi.
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <?php foreach($dischi as $disco) : ?>
-        <div class="card">
-            <div class="image">
-                <img src="<?php echo $disco->poster ?>" alt="">
-            </div>
+    <div class="container">
+        <div class="row">
+            <?php foreach($dischi as $disco) : ?>
+                <div class="card">
+                    <div class="image">
+                        <img src="<?php echo $disco->poster ?>" alt="">
+                    </div>
+                    <div class="text">
+                        <h2><?php echo $disco->title ?></h2>
+                        <div class="author">
+                        <?php echo $disco->author ?>
+                        </div>
+                        <div class="year">
+                        <?php echo $disco->year ?>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </div>
-    <?php endforeach; ?>
-
+    </div>
 </body>
 </html>

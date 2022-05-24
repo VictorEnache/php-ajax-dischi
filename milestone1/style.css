@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.card{
+    width: calc(100% * 1/5);
+}
+
+img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
